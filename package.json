@@ -1,10 +1,13 @@
 {
   "name": "components",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "main": "lib/index.umd.js",
+  "module": "lib/index.esm.js",
+  "typings": "lib/index.d.ts",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "yarn build:esm && yarn build:umd",
     "build:esm": "rollup --config ./build/rollup.config.esm.js",
     "build:umd": "rollup --config ./build/rollup.config.umd.js",
     "lint": "vue-cli-service lint"
