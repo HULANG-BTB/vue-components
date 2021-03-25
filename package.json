@@ -6,6 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "build:esm": "rollup --config ./build/rollup.config.esm.js",
+    "build:umd": "rollup --config ./build/rollup.config.umd.js",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
