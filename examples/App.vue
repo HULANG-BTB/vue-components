@@ -1,5 +1,8 @@
 <template>
-  <div id="#app">example</div>
+  <div id="#app">
+    <comp-a />
+    <comp-b />
+  </div>
 </template>
 
 <script lang="ts">
