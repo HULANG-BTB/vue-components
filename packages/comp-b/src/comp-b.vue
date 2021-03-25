@@ -1,5 +1,5 @@
 <template>
-  <div class="comp-b">comp-b</div>
+  <div style="width: 200px; background-color: green">comp-b</div>
 </template>
 
 <script lang="ts">
@@ -9,10 +9,3 @@ export default defineComponent({
   name: 'CompB'
 })
 </script>
-
-<style lang="scss">
-.comp-b {
-  width: 200px;
-  background-color: green;
-}
-</style>
