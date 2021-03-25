@@ -1,0 +1,25 @@
+diff a/.eslintrc.js b/.eslintrc.js	(rejected hunks)
+@@ -4 +4 @@ module.exports = {
+-    node: true,
++    node: true
+@@ -6,7 +6 @@ module.exports = {
+-  extends: [
+-    "plugin:vue/vue3-essential",
+-    "eslint:recommended",
+-    "@vue/typescript/recommended",
+-    "@vue/prettier",
+-    "@vue/prettier/@typescript-eslint",
+-  ],
++  extends: ['plugin:vue/vue3-essential', 'eslint:recommended', '@vue/typescript/recommended', '@vue/prettier', '@vue/prettier/@typescript-eslint'],
+@@ -14 +8 @@ module.exports = {
+-    ecmaVersion: 2020,
++    ecmaVersion: 2020
+@@ -17,4 +11,4 @@ module.exports = {
+-    "no-console": process.env.NODE_ENV === "production" ? "warn" : "off",
+-    "no-debugger": process.env.NODE_ENV === "production" ? "warn" : "off",
+-  },
+-};
++    'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
++    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off'
++  }
++}
