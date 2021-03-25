@@ -7,7 +7,11 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
+
+import { CompA, CompB } from '../packages'
+
 export default defineComponent({
-  name: 'App'
+  name: 'App',
+  components: { CompA, CompB }
 })
 </script>
