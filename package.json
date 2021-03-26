@@ -14,6 +14,9 @@
     "build:umd": "rollup --config ./build/rollup.config.umd.js",
     "lint": "vue-cli-service lint"
   },
+  "peerDependencies": {
+    "vue": "^3.0.0"
+  },
   "dependencies": {
     "core-js": "^3.6.5",
     "vue": "^3.0.0"
