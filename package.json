@@ -5,6 +5,7 @@
   "main": "lib/index.umd.js",
   "module": "lib/index.esm.js",
   "typings": "lib/index.d.ts",
+  "style": "lib/theme-chalk/index.css",
   "license": "MIT",
   "scripts": {
     "serve": "vue-cli-service serve",
