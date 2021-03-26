@@ -9,7 +9,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "yarn build:esm && yarn build:umd",
-    "build:esm": "rollup --config ./build/rollup.config.esm.js",
+    "build:esm-bundle": "rollup --config ./build/rollup.config.esm-bundle.js",
     "build:umd": "rollup --config ./build/rollup.config.umd.js",
     "lint": "vue-cli-service lint"
   },
