@@ -9,6 +9,8 @@
 import { defineComponent } from 'vue'
 
 import { CompA, CompB } from '../packages'
+import '../packages/theme-chalk/lib/comp-a.css'
+import '../packages/theme-chalk/lib/comp-b.css'
 
 export default defineComponent({
   name: 'App',
