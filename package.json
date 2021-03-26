@@ -12,6 +12,7 @@
     "build:esm-bundle": "rollup --config ./build/rollup.config.esm-bundle.js",
     "build:esm": "rollup --config ./build/rollup.config.esm.js",
     "build:umd": "rollup --config ./build/rollup.config.umd.js",
+    "build:theme": "gulp build --gulpfile packages/theme-chalk/gulpfile.js",
     "lint": "vue-cli-service lint"
   },
   "peerDependencies": {
@@ -35,6 +36,11 @@
     "eslint": "^6.7.2",
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-vue": "^7.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-dart-sass": "^1.0.2",
+    "gulp-rename": "^2.0.0",
     "lint-staged": "^9.5.0",
     "node-sass": "^4.12.0",
     "prettier": "^2.2.1",

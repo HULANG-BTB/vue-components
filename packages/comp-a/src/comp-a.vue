@@ -1,5 +1,5 @@
 <template>
-  <div style="width: 200px; background-color: red">comp-a</div>
+  <div class="comp-a">comp-a</div>
 </template>
 
 <script lang="ts">
