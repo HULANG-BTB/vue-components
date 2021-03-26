@@ -5,6 +5,7 @@
   "main": "lib/index.umd.js",
   "module": "lib/index.esm.js",
   "typings": "lib/index.d.ts",
+  "license": "MIT",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "yarn build:esm && yarn build:umd",
