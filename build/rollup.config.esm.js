@@ -1,7 +1,7 @@
 /* eslint-disable */
 import path from 'path'
 import pkg from '../package.json'
-import { terser } from 'rollup-plugin-terser'
+// import { terser } from 'rollup-plugin-terser'
 import { nodeResolve } from '@rollup/plugin-node-resolve'
 import vue from 'rollup-plugin-vue'
 import typescript from 'rollup-plugin-typescript2'
@@ -37,7 +37,6 @@ const configs = indexlist
       file: dist.replace('packages', 'lib').replace('.ts', '.js') // 设置输出目录
     },
     plugins: [
-      terser(),
       nodeResolve(),
       vue({
         target: 'browser', // 服务端渲染使用 'node'
