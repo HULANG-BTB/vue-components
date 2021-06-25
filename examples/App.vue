@@ -8,12 +8,7 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 
-import { CompA, CompB } from 'packages' // 自动识别根目录下的package.json文件
-import '../lib/theme-chalk/comp-a.css'
-import '../lib/theme-chalk/comp-b.css'
-
 export default defineComponent({
-  name: 'App',
-  components: { CompA, CompB }
+  name: 'App'
 })
 </script>

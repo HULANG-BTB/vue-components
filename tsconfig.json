@@ -17,9 +17,7 @@
       "@/*": ["src/*"],
       "packages/*": ["packages/*"],
       "~/*": ["./*"]
-    },
-    "lib": ["esnext", "dom", "dom.iterable", "scripthost"]
+    }
   },
-  "include": ["examples/**/*.ts", "examples/**/*.tsx", "examples/**/*.vue", "packages/**/*.ts", "packages/**/*.tsx", "packages/**/*.vue", "typings/**/*.ts"],
   "exclude": ["node_modules"]
 }

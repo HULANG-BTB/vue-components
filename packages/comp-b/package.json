@@ -25,5 +25,8 @@
   },
   "bugs": {
     "url": "https://github.com/HULANG-BTB/vue-components/issues"
+  },
+  "dependencies": {
+    "@components/comp-a": "^0.0.0"
   }
 }

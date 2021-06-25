@@ -1,7 +1,7 @@
 {
   "name": "components",
-  "version": "0.1.0",
-  "private": false,
+  "version": "0.0.0-development",
+  "private": true,
   "main": "lib/index.umd.js",
   "module": "lib/index.esm.js",
   "typings": "lib/index.d.ts",
@@ -9,6 +9,8 @@
   "license": "MIT",
   "scripts": {
     "serve": "vue-cli-service serve",
+    "bootstrap": "yarn --frozen-lockfile && npx lerna bootstrap && yarn gen:version",
+    "gen:version": "node build/gen-version.js",
     "clean:lib": "rimraf lib && rimraf es",
     "build": "yarn clean:lib && yarn build:umd && yarn build:esm && yarn build:esm-bundle && yarn build:theme",
     "build:esm-bundle": "rollup --config ./build/rollup.config.esm-bundle.js && yarn build:type",
@@ -65,5 +67,8 @@
       "vue-cli-service lint",
       "git add"
     ]
-  }
+  },
+  "workspaces": [
+    "packages/*"
+  ]
 }
