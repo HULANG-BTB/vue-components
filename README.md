@@ -36,6 +36,13 @@ yarn build:theme # 构建 scss 主题
 yarn lint
 ```
 
+### 创建一个组件
+
+```bash
+lerna create <组件名称>     # 组件名称为 @scope/组件名
+yarn bootstrap
+```
+
 ### 自定义配置
 
 See [Configuration Reference](https://cli.vuejs.org/config/).
