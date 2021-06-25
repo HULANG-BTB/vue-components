@@ -23,7 +23,6 @@ function compile() {
   //   })
   // )
 }
-
 function copyfont() {
   return src(path.resolve(__dirname, '../packages/theme-chalk/src/fonts/**'))
     .pipe(cssmin())

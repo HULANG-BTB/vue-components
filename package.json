@@ -9,7 +9,8 @@
   "license": "MIT",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "yarn build:esm && yarn build:esm-bundle && yarn build:umd && yarn build:theme",
+    "clean:lib": "rimraf lib && rimraf es",
+    "build": "yarn clean:lib && yarn build:umd && yarn build:esm && yarn build:esm-bundle && yarn build:theme",
     "build:esm-bundle": "rollup --config ./build/rollup.config.esm-bundle.js && yarn build:type",
     "build:esm": "node ./build/bincomp.js",
     "build:type": "node build/gen-type.js",
@@ -47,6 +48,7 @@
     "lint-staged": "^9.5.0",
     "node-sass": "^4.12.0",
     "prettier": "^2.2.1",
+    "rimraf": "^3.0.2",
     "rollup": "^2.42.4",
     "rollup-plugin-css-only": "^3.1.0",
     "rollup-plugin-terser": "^7.0.2",
