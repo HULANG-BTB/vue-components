@@ -10,8 +10,9 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "yarn build:esm && yarn build:esm-bundle && yarn build:umd && yarn build:theme",
-    "build:esm-bundle": "rollup --config ./build/rollup.config.esm-bundle.js",
+    "build:esm-bundle": "rollup --config ./build/rollup.config.esm-bundle.js && yarn build:type",
     "build:esm": "node ./build/bincomp.js",
+    "build:type": "node build/gen-type.js",
     "build:umd": "rollup --config ./build/rollup.config.umd.js",
     "build:theme": "gulp build --gulpfile ./build/gulp.config.theme.js",
     "lint": "vue-cli-service lint"

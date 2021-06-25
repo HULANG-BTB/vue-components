@@ -5,12 +5,13 @@ import { terser } from 'rollup-plugin-terser'
 import { nodeResolve } from '@rollup/plugin-node-resolve'
 import vue from 'rollup-plugin-vue'
 import typescript from 'rollup-plugin-typescript2'
+const { scope } = require('./common')
 
 const deps = Object.keys(pkg.dependencies || {})
 
 export default [
   {
-    input: path.resolve(__dirname, '../packages/index.ts'), //入口
+    input: path.resolve(__dirname, `../packages/${scope}/index.ts`), //入口
     output: {
       format: 'es',
       file: 'lib/index.esm.js'

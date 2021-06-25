@@ -1,4 +1,11 @@
 /* eslint-disable */
+/**
+ * 工具 构建单个组件
+ * command line
+ * @param param1 起始位置
+ * @param param2 终止位置
+ */
+
 const pkg = require('../package.json')
 const path = require('path')
 const { getPackages } = require('@lerna/project')
